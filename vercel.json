@@ -1,0 +1,21 @@
+{
+    "builds":[
+        {
+            "src": "./app.js",
+            "use" : "@vercel/node"
+        }
+    ],
+    "routers": [
+        {
+            "src": "/.*",
+            "dest": "server.js"
+        }
+    ],
+    "rewrites": [
+        { 
+            "source": "/(.*)", 
+            "destination": "/" 
+        }
+    ]
+
+}
